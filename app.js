@@ -22,7 +22,7 @@ $(function(){
       });
 
     });
-  $.getJSON('https://api.yummly.com/v1/api/recipes?_app_id=5241297e&_app_key=a811f76dde33d08303b90321171edcc5&q='+recipeSearch+'&maxResult=10&start=10'+'&requirePictures=true', function(data){
+  $.getJSON('https://api.yummly.com/v1/api/recipes?_app_id=5241297e&_app_key=a811f76dde33d08303b90321171edcc5&q='+recipeSearch+'&maxResult=15&start=15'+'&requirePictures=true', function(data){
     $.each(data.matches, function() {
       var thisId = this.id;
       console.log(this);
